@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+🚀 Employee Directory System
+📌 Project Overview
 
-## Project info
+This is a modern Employee Directory System built using React and TypeScript.
+The application allows users to manage employee records with a clean and responsive UI.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+It is designed with scalability and maintainability in mind using modern frontend tools.
 
-## How can I edit this code?
+🛠 Tech Stack
 
-There are several ways of editing your application.
+⚡ Vite
 
-**Use Lovable**
+⚛️ React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🟦 TypeScript
 
-Changes made via Lovable will be committed automatically to this repo.
+🎨 Tailwind CSS
 
-**Use your preferred IDE**
+🧩 shadcn/ui
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📂 Getting Started (Run Locally)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Make sure you have Node.js (v18 or later) installed.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1️⃣ Clone the repository
+git clone <your-repository-url>
+2️⃣ Navigate into the project folder
+cd employee-directory
+3️⃣ Install dependencies
+npm install
+4️⃣ Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+The app will run locally at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+http://localhost:5173
+📦 Build for Production
+npm run build
 
-**Use GitHub Codespaces**
+To preview the production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+npm run preview
+✨ Features
 
-## What technologies are used for this project?
+Add Employees
 
-This project is built with:
+Edit Employee Details
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Delete Employees
 
-## How can I deploy this project?
+Responsive UI
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Clean Component-Based Architecture
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📁 Project Structure
+src/
+ ├── components/
+ ├── pages/
+ ├── hooks/
+ ├── lib/
+ └── main.tsx
+ 
+📄 License:
+This project is open-source and available under the MIT License.
