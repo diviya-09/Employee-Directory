@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 224 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 30% 15%;
+
+    --primary: 230 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 224 30% 20%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 250 60% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 60% 42%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 200 80% 50%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 230 70% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 230 35% 18%;
+    --sidebar-foreground: 220 20% 85%;
+    --sidebar-primary: 230 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 30% 24%;
+    --sidebar-accent-foreground: 220 20% 95%;
+    --sidebar-border: 230 25% 25%;
+    --sidebar-ring: 230 70% 55%;
+    --sidebar-muted: 230 20% 40%;
+
+    /* Department colors */
+    --dept-engineering: 230 70% 55%;
+    --dept-design: 280 60% 55%;
+    --dept-marketing: 340 70% 55%;
+    --dept-hr: 152 60% 42%;
+    --dept-finance: 38 80% 50%;
+    --dept-sales: 200 80% 50%;
+  }
+
+  .dark {
+    --background: 224 30% 8%;
+    --foreground: 220 20% 95%;
+    --card: 224 25% 12%;
+    --card-foreground: 220 20% 95%;
+    --popover: 224 25% 12%;
+    --popover-foreground: 220 20% 95%;
+    --primary: 230 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 224 20% 18%;
+    --secondary-foreground: 220 20% 90%;
+    --muted: 224 20% 18%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 250 60% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 224 20% 20%;
+    --input: 224 20% 20%;
+    --ring: 230 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .card-shadow {
+    box-shadow: 0 1px 3px 0 hsl(230 30% 20% / 0.06), 0 1px 2px -1px hsl(230 30% 20% / 0.06);
+  }
+  .card-shadow-hover {
+    box-shadow: 0 10px 25px -5px hsl(230 30% 20% / 0.1), 0 8px 10px -6px hsl(230 30% 20% / 0.08);
+  }
+  .card-shadow-lg {
+    box-shadow: 0 20px 40px -12px hsl(230 30% 20% / 0.15);
+  }
+}
